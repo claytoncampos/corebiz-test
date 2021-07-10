@@ -13,7 +13,6 @@ export const Container = styled.div`
   @media (max-width: 400px) {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
   }
 `;
 

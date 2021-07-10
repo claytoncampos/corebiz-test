@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
     height: 100vh;
     background: var(--background);
+    
 }
 
 body, input, text-area, button {
