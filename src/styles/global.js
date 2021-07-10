@@ -6,14 +6,14 @@ export const GlobalStyle = createGlobalStyle`
     --background: #FFF;
     --container: 77.5rem //1240px
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-html, body {
+body {
     height: 100vh;
     background: var(--background);
 }
