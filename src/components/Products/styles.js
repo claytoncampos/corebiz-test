@@ -19,7 +19,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 100%;
+  max-width: 100%;
   height: 501px;
   padding: 0 340px;
   display: flex;

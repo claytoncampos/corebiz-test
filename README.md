@@ -20,7 +20,7 @@ Tenha instalado:
 
 ## Instalação
 
-- Clone o repositório `git clone https://github.com/claytoncampos/corebiz-frontend-challenge.git`
+- Clone o repositório `git clone https://github.com/claytoncampos/corebiz-test.git`
 - Entre dentro do dretório.
 - Instale os pacotes com o comando `yarn install` ou `npm install`
 
@@ -32,4 +32,4 @@ Tenha instalado:
 
 - Hospedado na plataforma Netlify
 
-- Veja a [Demo](https://corebiz-inky.vercel.app/)
+- Veja a [Demo]("")
