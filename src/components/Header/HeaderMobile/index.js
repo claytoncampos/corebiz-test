@@ -1,10 +1,15 @@
-import { Container, Content } from './styles';
+import { Container, Content, InputSearch } from './styles';
+import { useContext } from 'react';
+import { CounterCartContext } from '../../hooks/useItems';
+
 import logo from '../../../assets/images/logo.svg';
 import searchIcon from '../../../assets/images/searchIcon.svg';
 import carIcon from '../../../assets/images/carIcon.svg';
 import menuIcon from '../../../assets/images/menuIcon.svg';
 
 export function HeaderMobile() {
+  const [count] = useContext(CounterCartContext);
+
   return (
     <Container>
       <Content>
@@ -15,16 +20,16 @@ export function HeaderMobile() {
             <div className="buy-car">
               <img src={carIcon} alt="carrinho de compra" />
               <div>
-                <p>2</p>
+                <p>{count}</p>
               </div>
             </div>
           </nav>
         </div>
         <nav>
-          <div className="input-search">
+          <InputSearch>
             <input type="text" placeholder="O que está procurando?" />
             <img src={searchIcon} alt="corebiz" />
-          </div>
+          </InputSearch>
         </nav>
       </Content>
     </Container>

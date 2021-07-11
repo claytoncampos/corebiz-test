@@ -13,9 +13,13 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+
+
 body {
     height: 100vh;
     background: var(--background);
+    max-width: 1280px;
+   
     
 }
 

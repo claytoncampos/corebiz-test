@@ -5,6 +5,7 @@ import { Container, Content, Block } from './styles';
 
 import { api } from '../../services/api';
 import { useWindowSize } from '../hooks/useWindowSize';
+import { CounterCartContext } from '../hooks/useItems';
 
 import formatCurrency from '../../utils/formatCurrency';
 
@@ -15,7 +16,7 @@ import starOutLine from '../../assets/images/starOutline.svg';
 export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState();
   const [products, setProducts] = useState([]);
-  // const [count, setCount] = useContext(CounterCart);
+  const [count, setCount] = useContext(CounterCartContext);
 
   const [width] = useWindowSize();
 
@@ -38,9 +39,9 @@ export default function Products() {
     getProducts();
   }, []);
 
-  //   function handleBuy() {
-  //     setCount(count + 1);
-  //   }
+  function handleBuyProduct() {
+    setCount(count + 1);
+  }
 
   function renderStars(stars) {
     const response = [];
@@ -97,7 +98,7 @@ export default function Products() {
                 </p>
               ))}
               {product.productId === selectedProduct && (
-                <button onClick={''}>COMPRAR</button>
+                <button onClick={handleBuyProduct}>COMPRAR</button>
               )}
             </div>
           ))}

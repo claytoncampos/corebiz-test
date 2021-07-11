@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  width: 100vw;
   height: 80px;
   background-color: #fff;
   display: flex;
@@ -11,6 +12,8 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 20px;
 
   > div {
     width: 100%;
@@ -45,25 +48,25 @@ export const Content = styled.div`
         color: #fff;
       }
     }
+  }
+`;
 
-    .input-search {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid #7a7a7a;
-      padding: 4px;
+export const InputSearch = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #7a7a7a;
+  padding: 4px;
 
-      input {
-        margin-top: 4px;
-        margin-right: 8px;
-        width: 96%;
-        border: none;
-      }
+  input {
+    margin-top: 4px;
+    margin-right: 8px;
+    width: 96%;
+    border: none;
+  }
 
-      input:focus {
-        box-shadow: 0 0 0 0;
-        outline: 0;
-      }
-    }
+  input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
   }
 `;

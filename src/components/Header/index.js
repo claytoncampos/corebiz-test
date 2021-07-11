@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import * as S from './styles';
 
 import { HeaderMobile } from './HeaderMobile';
 import { useWindowSize } from '../../components/hooks/useWindowSize';
+import { CounterCartContext } from '../../components/hooks/useItems';
 import logo from '../../assets/images/logo.svg';
 import carIcon from '../../assets/images/carIcon.svg';
 import searchIcon from '../../assets/images/searchIcon.svg';
 import personIcon from '../../assets/images/personIcon.svg';
 
 export default function Header() {
+  const [count] = useContext(CounterCartContext);
   const [width] = useWindowSize();
 
   const [isMobile, setIsMobile] = useState(width < 480);
@@ -28,7 +30,11 @@ export default function Header() {
             <nav>
               <div className="input-search">
                 <input type="text" placeholder="O que está procurando?" />
-                <img src={searchIcon} alt="ícone lupa buscar produtos" />
+                <img
+                  className="lupa"
+                  src={searchIcon}
+                  alt="ícone lupa buscar produtos"
+                />
               </div>
               <div className="my-account">
                 <img src={personIcon} alt="ícone pessoa" />
@@ -37,7 +43,7 @@ export default function Header() {
               <div className="buy-car">
                 <img src={carIcon} alt="Ícone carrinho de compras" />
                 <div>
-                  <p>1</p>
+                  <p>{count}</p>
                 </div>
               </div>
             </nav>

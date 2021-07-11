@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { api } from '../../services/api';
 import validateEmail from '../../utils/validateEmail';
-import { Container, ButtonError } from './styles';
+import { Container } from './styles';
 
 export default function NewsDesk() {
   const [name, setName] = useState('');

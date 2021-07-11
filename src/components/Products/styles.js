@@ -7,13 +7,13 @@ export const Block = styled.div`
   margin: 16px 0;
 
   @media (max-width: 500px) {
-    margin-left: 16px;
+    margin-left: 30px;
     width: 32.5px;
   }
 `;
 
 export const Container = styled.div`
-  max-width: 100%;
+  width: 100%;
   height: 501px;
   margin-top: 0 auto;
 `;
@@ -145,7 +145,7 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     width: 216px;
-    height: 353px;
+    //height: 353px;
     padding-bottom: 16px;
     position: relative;
 

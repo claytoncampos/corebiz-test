@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  // width: max width var(--container);
   width: 100%;
   height: 80px;
   padding: 20px;
@@ -10,9 +9,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0 auto;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     display: flex;
     flex-direction: column;
   }
