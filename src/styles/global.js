@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
     height: 100vh;
     background: var(--background);
-    max-width: 1280px;
+    
    
     
 }

@@ -6,7 +6,7 @@ export const Block = styled.div`
   border-bottom: 4px solid #c0c0c0;
   margin: 16px 0;
 
-  @media (max-width: 500px) {
+  @media (max-width: 480px) {
     margin-left: 30px;
     width: 32.5px;
   }

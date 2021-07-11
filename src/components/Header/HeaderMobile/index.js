@@ -14,7 +14,7 @@ export function HeaderMobile() {
     <Container>
       <Content>
         <div>
-          <img src={menuIcon} alt="menu" />
+          <img src={menuIcon} width={22.5} alt="menu" />
           <img className="logo" src={logo} alt="corebiz" />
           <nav>
             <div className="buy-car">

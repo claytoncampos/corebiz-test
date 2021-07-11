@@ -13,7 +13,8 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   > div {
     width: 100%;
