@@ -10,6 +10,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0 auto;
 
   @media (max-width: 400px) {
     display: flex;

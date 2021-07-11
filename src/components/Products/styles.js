@@ -25,6 +25,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 0 auto;
 
   h1 {
     font-weight: 900;
