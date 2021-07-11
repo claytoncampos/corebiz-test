@@ -32,4 +32,4 @@ Tenha instalado:
 
 - Hospedado na plataforma Netlify
 
-- Veja a [Demo]("")
+- Veja a [Demo](https://corebiz-test-frontend.netlify.app/)
